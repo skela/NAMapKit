@@ -23,10 +23,10 @@
 @property (readwrite, nonatomic, assign) BOOL displayTileBorders;
 
 /// Set a background image, displayed while tiles are being downloaded.
-@property (readwrite, nonatomic) NSURL *backgroundImageURL;
+@property (copy, nonatomic) NSURL *backgroundImageURL;
 
 /// Set a background image, displayed while tiles are being downloaded.
-@property (readwrite, nonatomic) UIImage *backgroundImage;
+@property (assign, nonatomic) UIImage *backgroundImage;
 
 /// The current tile zoom level based on the DeepZoom algorithm.
 @property (readonly, nonatomic, assign) NSInteger tileZoomLevel;
