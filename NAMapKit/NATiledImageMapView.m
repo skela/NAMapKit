@@ -97,7 +97,7 @@
 {
     UIImageView *backgroundImageView = [[UIImageView alloc] initWithFrame:self.imageView.frame];
     [self insertSubview:backgroundImageView belowSubview:self.imageView];
-    [backgroundImageView setImageWithURL:backgroundImageURL];
+    [backgroundImageView sd_setImageWithURL:backgroundImageURL];
     _backgroundImageView = backgroundImageView;
     _backgroundImageURL = backgroundImageURL;
 }
